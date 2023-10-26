@@ -1,0 +1,116 @@
+<!-- By Souleymane Kodjo -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formulaire de connexion</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f2f2f2;
+				margin: 0;
+				/* padding: 20px; */
+			}
+
+			h1 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			form {
+				max-width: 400px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			input[type="text"],
+			input[type="password"],
+			input[type="email"] {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				margin-bottom: 10px;
+			}
+
+			input[type="text"]:focus,
+			input[type="password"]:focus,
+			input[type="email"]:focus {
+				border-color: #4caf50;
+				outline: none;
+			}
+
+			.error {
+				border-color: #ff0000;
+			}
+
+			.error-message {
+				color: #ff0000;
+				margin-top: 5px;
+			}
+
+			button {
+				background-color: #4caf50;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #45a049;
+			}
+			/* HK */
+			.container {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-wrap: wrap;
+				background-color: DodgerBlue;
+				height: 100vh;
+			}
+			.image-container {
+				width: 50%;
+				min-height: 500px;
+				background-image: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/03/web-images.jpg?auto=format&q=60&w=1600&h=824&fit=crop&crop=faces");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.form-container {
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-container">
+				<h1>Formulaire d'Inscription</h1>
+				<form>
+					<label for="username">Nom d'utilisateur:</label>
+					<input type="text" id="username" name="username" required />
+
+					<label for="password">Mot de passe:</label>
+					<input type="password" id="password" name="password" required />
+
+					<button type="submit">Se connecter</button>
+				</form>
+			</div>
+			<div class="image-container">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda<br />
+				adipisci aperiam accusantium, necessitatibus nihil suscipit
+				temporibus<br />
+				magni vero tempora nobis inventore unde reprehenderit excepturi, cum<br />
+				labore sit iusto itaque ut.<br />
+			</div>
+		</div>
+	</body>
+</html>

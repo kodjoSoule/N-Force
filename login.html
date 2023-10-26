@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page de connexion</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      width: 50%;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .image-container {
+      width: 50%;
+      padding: 20px;
+      background-color: #e6e6e6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Connexion</h2>
+      <form>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Se connecter">
+      </form>
+    </div>
+    <div class="image-container">
+      <h2>Bienvenue sur notre site</h2>
+      <img src="image.jpg" alt="Image de bienvenue">
+      <p>Informations supplémentaires et messages de bienvenue peuvent être ajoutés ici.</p>
+    </div>
+  </div>
+</body>
+</html>

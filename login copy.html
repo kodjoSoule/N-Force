@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page de connexion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .form-container,
+    .image-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #f2f2f2;
+    }
+
+    .image-container {
+      background-color: #e6e6e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .image-container h2 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Formulaire d'Inscription</h1>
+      <form>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirmer le mot de passe:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <label for="email">Adresse e-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+    <div class="image-container">
+      <h2>Bienvenue sur notre site</h2>
+      <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/03/web-images.jpg?auto=format&q=60&w=1600&h=824&fit=crop&crop=faces" alt="Image de bienvenue" />
+      <p>Informations supplémentaires et messages de bienvenue peuvent être ajoutés ici.</p>
+    </div>
+  </div>
+</body>
+</html>

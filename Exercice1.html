@@ -1,0 +1,77 @@
+<!-- By Souleymane Kodjo -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Page de Contact</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f2f2f2;
+				margin: 0;
+				padding: 20px;
+			}
+
+			h1 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			form {
+				max-width: 500px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px 40px;
+
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			input[type="text"],
+			textarea {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+			}
+
+			textarea {
+				height: 150px;
+			}
+
+			button {
+				background-color: #4caf50;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #45a049;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Contactez-nous</h1>
+		<form>
+			<label for="name">Nom complet:</label>
+			<input type="text" id="name" name="name" required />
+
+			<label for="email">Adresse e-mail:</label>
+			<input type="text" id="email" name="email" required />
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<button type="submit">Envoyer</button>
+		</form>
+	</body>
+</html>
